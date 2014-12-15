@@ -1,0 +1,36 @@
+
+body {
+	padding-top: 5em;
+}
+
+#wrapper {
+	width: 40em;
+	border: 1px solid darkgrey;
+	margin: 0 auto;
+	padding: 2.5em 4em;
+}
+
+#search {
+	display: block;
+	border: 10px solid #00688b;
+	margin: 0 auto 1em;
+	width: 30em;
+	padding: 0.3em 0.8em;
+}
+
+ul img {
+	width: 4em;
+	height: 4em;
+	margin-right: 1em;
+	float: left;
+}
+
+#result {
+	margin: 0 auto;
+	width: 28em;
+}
+
+ul li {
+	border-bottom: 1px solid darkgrey;
+	height: 5em;
+}
