@@ -9,12 +9,17 @@
 		<script src="bower_components/angular/angular.js"></script>
   	<script src="js/controllers.js"></script>
 	</head>
-	<body>
+	<body ng-controller="ShoppingCartCtrl">
+		
 		<div id="wrapper">
-			<input type="text" id="search">
+			<input type="text" id="search" ng-model="query">
 			<div id="result">
-				<ul>
-					<li><a href="http://www.quora.com/What-kind-of-jobs-do-software-engineers-who-earn-500k-per-year-do"><img src="img/01.jpg"><span>50 Must-have plugins for visualizing Twitter ;slvjls dslvnsld sdjcvs</span></a></li>
+				<ul >
+					<li ng-repeat="cart in carts | filter:query | orderBy:text">
+						<a href="{{cart.link}}"><img src="{{cart.img}}">
+							<span>{{cart.text}}</span>
+						</a>
+					</li>
 				</ul>
 			</div>
 		</div> <!--end wrapper -->
