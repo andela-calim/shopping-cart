@@ -5,6 +5,7 @@
 var shoppingCart = angular.module('shoppingCart', []);
 
 shoppingCart.controller('ShoppingCartCtrl', function($scope) {
+
   $scope.carts = [
     {
       "img": "img/01.jpg",
@@ -37,4 +38,5 @@ shoppingCart.controller('ShoppingCartCtrl', function($scope) {
       "link": "http://www.quora.com/What-are-the-stupidest-decisions-ever-made-in-Silicon-Valley"
     }
   ];
+  
 });

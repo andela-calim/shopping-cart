@@ -12,8 +12,10 @@
 	<body ng-controller="ShoppingCartCtrl">
 		
 		<div id="wrapper">
+
 			<div id="main">
-				<input type="text" id="search" ng-model="query" placeholder="Enter your search terms">
+
+				<input type="text" id="search" ng-model="query" placeholder="&#128269; Enter your search terms">
 				<div id="result">
 					<ul >
 						<li ng-repeat="cart in carts | filter:query | orderBy:text">
@@ -23,11 +25,14 @@
 						</li>
 					</ul>
 				</div>
-			</div>
+
+			</div><!--ends main -->
+
 			<div id="editDiv">
 				<button type="button">EDIT</button>
 			</div>
-		</div> <!--end wrapper -->
+
+		</div> <!--ends wrapper -->
 		
 	</body>
 </html>
