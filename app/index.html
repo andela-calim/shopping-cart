@@ -12,15 +12,20 @@
 	<body ng-controller="ShoppingCartCtrl">
 		
 		<div id="wrapper">
-			<input type="text" id="search" ng-model="query">
-			<div id="result">
-				<ul >
-					<li ng-repeat="cart in carts | filter:query | orderBy:text">
-						<a ng-href="{{cart.link}}"><img ng-src="{{cart.img}}">
-							<span>{{cart.text}}</span>
-						</a>
-					</li>
-				</ul>
+			<div id="main">
+				<input type="text" id="search" ng-model="query" placeholder="Enter your search terms">
+				<div id="result">
+					<ul >
+						<li ng-repeat="cart in carts | filter:query | orderBy:text">
+							<a ng-href="{{cart.link}}"><img ng-src="{{cart.img}}">
+								<span>{{cart.text}}</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div id="editDiv">
+				<button type="button">EDIT</button>
 			</div>
 		</div> <!--end wrapper -->
 		
