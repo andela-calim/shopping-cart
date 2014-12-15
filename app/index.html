@@ -16,7 +16,7 @@
 			<div id="result">
 				<ul >
 					<li ng-repeat="cart in carts | filter:query | orderBy:text">
-						<a href="{{cart.link}}"><img src="{{cart.img}}">
+						<a ng-href="{{cart.link}}"><img ng-src="{{cart.img}}">
 							<span>{{cart.text}}</span>
 						</a>
 					</li>
